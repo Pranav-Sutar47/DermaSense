@@ -40,7 +40,7 @@ def predict():
 
         image_file = request.files['image']
         image_path = "temp_image.jpg"
-        # image_file.save(image_path)  # Save image temporarily
+        image_file.save(image_path)  # Save image temporarily
 
         # 🔹 **Preprocess Image**
         image = preprocess_image(image_path)
